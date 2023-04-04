@@ -1,10 +1,12 @@
-
 import '../styles/App.css';
+import TopBar from './Navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <h2>New Portfolio</h2>
+    <div className="container">
+      <header>
+        <TopBar />
+      </header>
     </div>
   );
 }
