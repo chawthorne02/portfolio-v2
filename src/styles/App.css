@@ -1,0 +1,44 @@
+.container {
+
+}
+
+.title-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: coral;
+}
+
+.about-me {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: fuchsia;
+}
+
+.projects {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: greenyellow;
+}
+
+.contact-me {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: paleturquoise;
+}
+

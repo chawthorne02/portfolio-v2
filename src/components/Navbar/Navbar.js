@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import '../../styles/Navbar.css';
 function TopBar() {
 
 
@@ -9,13 +9,14 @@ function TopBar() {
 
 
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar className='navbar' fixed="top">
         <Container>
           <Navbar.Brand href="#home">Corey Hawthorne</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">About Me</Nav.Link>
-            <Nav.Link href="#features">Projects</Nav.Link>
-            <Nav.Link href="#pricing">Resume</Nav.Link>
+          <Nav className='navlinks'>
+            <Nav.Link>About Me</Nav.Link>
+            <Nav.Link>Projects</Nav.Link>
+            <Nav.Link>Contact</Nav.Link>
+            <Nav.Link>Resume</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
