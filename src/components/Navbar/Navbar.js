@@ -11,12 +11,12 @@ function TopBar() {
     return (
         <Navbar className='navbar' fixed="top">
         <Container>
-          <Navbar.Brand>Corey Hawthorne</Navbar.Brand>
+          <Navbar.Brand className="nav-left">Corey Hawthorne</Navbar.Brand>
           <Nav className='navlinks'>
-            <Nav.Link>About Me</Nav.Link>
-            <Nav.Link>Projects</Nav.Link>
-            <Nav.Link>Contact</Nav.Link>
-            <Nav.Link>Resume</Nav.Link>
+            <Navbar.Text className="nav-link">About Me</Navbar.Text>
+            <Navbar.Text className="nav-link">Projects</Navbar.Text>
+            <Navbar.Text className="nav-link">Contact</Navbar.Text>
+            <Navbar.Text className="nav-link">Resume</Navbar.Text>
           </Nav>
         </Container>
       </Navbar>

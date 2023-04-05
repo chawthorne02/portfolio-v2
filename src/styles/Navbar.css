@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
 
 .navlinks {
-    gap: 14px;
+    gap: 24px;
+}
+
+.navbar {
+    font-family: "Oswald";
+    color: white;
+}
+
+.nav-link {
+    color: white; 
+    font-weight: 400;
+    font-size: larger;
+}
+
+.nav-left {
+    color: white;
+    font-size: x-large;
 }
