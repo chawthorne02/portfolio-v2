@@ -11,7 +11,7 @@ function TopBar() {
     return (
         <Navbar className='navbar' fixed="top">
         <Container>
-          <Navbar.Brand href="#home">Corey Hawthorne</Navbar.Brand>
+          <Navbar.Brand>Corey Hawthorne</Navbar.Brand>
           <Nav className='navlinks'>
             <Nav.Link>About Me</Nav.Link>
             <Nav.Link>Projects</Nav.Link>
