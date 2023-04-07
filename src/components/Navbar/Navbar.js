@@ -12,13 +12,19 @@ function TopBar() {
     return (
         <Navbar className='navbar' fixed="top">
         <Container>
-          <Navbar.Brand className="nav-left">Corey Hawthorne</Navbar.Brand>
+          <Link className="nav-left" activeClass="active" to="title" spy={true} smooth={true} offset={0} duration={200}>
+            Corey Hawthorne
+            </Link>
           <Nav className='navlinks'>
             <Link className="nav-link" activeClass="active" to="about-me" spy={true} smooth={true} offset={0} duration={200}>
               About Me
               </Link>
-            <Navbar.Text className="nav-link">Projects</Navbar.Text>
-            <Navbar.Text className="nav-link">Contact</Navbar.Text>
+            <Link className="nav-link" activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={200}>
+              Projects
+              </Link>
+            <Link className="nav-link" activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={200}>
+              Contact
+              </Link>
             <Navbar.Text className="nav-link">Resume</Navbar.Text>
           </Nav>
         </Container>
