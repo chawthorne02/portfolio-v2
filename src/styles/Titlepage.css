@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+
+.title-name {
+    font-family: "Oswald";
+    color: #fff;
+    font-size: 4rem;
+    border-bottom: solid 2px #fff;
+    padding-bottom: 15px;
+}
+
+.subtitle {
+    font-family: "Oswald";
+    color: #fff; 
+    font-size: 2rem;
+    text-align: center;
+}
