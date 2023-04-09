@@ -1,6 +1,7 @@
 import '../styles/App.css';
 import TopBar from './Navbar/Navbar';
 import TitlePage from './Titlepage/Titlepage';
+import AboutPage from './Aboutpage/Aboutpage';
 function App() {
 
   
@@ -15,7 +16,7 @@ function App() {
         <TitlePage />
       </section>
       <section className='about-me' id='about-me'>
-        <h2>About me section</h2>
+        <AboutPage />
       </section>
       <section className='projects' id='projects'>
         <h2>Projects section</h2>

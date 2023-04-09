@@ -1,5 +1,5 @@
-
-
+import Me from "../../images/Me.jpg";
+import "../../styles/Aboutpage.css";
 
 function AboutPage() {
  
@@ -9,6 +9,10 @@ function AboutPage() {
 
 
     return (
-        pass
+        <div>
+            <img src={Me} alt="me" className="me-pic"></img>
+        </div>
     )
 }
+
+export default AboutPage;
