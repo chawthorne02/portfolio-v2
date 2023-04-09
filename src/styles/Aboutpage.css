@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+.about-page {
+    display: flex;
+    gap: 50px;
+    margin-left: 15%;
+}
+
 .me-pic {
-    height: 450px;
+    height: 410px;
     border-radius: 50%;
     border: solid 5px #fff;
+    margin-left: 10px;
+}
+
+.about-text {
+    font-family: "Oswald";
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding-top: 65px;
+    width: 50%;
 }
