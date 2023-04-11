@@ -4,4 +4,19 @@
     font-family: "Oswald";
     font-weight: 400;
     color: #fff;
+    margin-bottom: 28%;
 }
+
+.contact-title {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact {
+    font-size: 1.5rem;
+}
+
