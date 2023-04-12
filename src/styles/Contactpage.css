@@ -9,6 +9,7 @@
 
 .contact-title {
     font-size: 3rem;
+    text-align: center;
 }
 
 a {
@@ -18,5 +19,30 @@ a {
 
 .contact {
     font-size: 1.5rem;
+    text-align: center;
 }
+
+.form-section {
+    display: flex;
+    gap: 50px;
+    border: solid 2px #fff;
+    padding: 100px;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-message {
+    width: 500px;
+}
+
+.contact-name {
+    width: 350px;
+
+}
+
+
 
