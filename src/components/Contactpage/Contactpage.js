@@ -2,6 +2,7 @@ import "../../styles/Contactpage.css"
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
+import Contactform from "./Contactform";
 
 function Contactpage() {
 
@@ -22,7 +23,7 @@ function Contactpage() {
             <p className="contact">
                 <MdLocationOn /> Greenville, South Carolina
             </p>
-            
+            <Contactform />
         </div>
     )
 }
