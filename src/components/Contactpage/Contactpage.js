@@ -3,16 +3,28 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
 import Contactform from "./Contactform";
+import Button from 'react-bootstrap/Button';
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 function Contactpage() {
 
+    const form = useRef();
 
-
-
-
-
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_dj2omhg', 'template_5sj81jn', form.current, '-5FuMIkA58NpIsBmE')
+        .then((result) => {
+            console.log(result.text);
+            console.log("message sent")
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
     return (
         <div className="contact-page">
+            <section>
             <h2 className="contact-title">Get In Touch</h2>
             <p className="contact">
                 <BsFillTelephoneFill />  864-293-0404
@@ -23,7 +35,8 @@ function Contactpage() {
             <p className="contact">
                 <MdLocationOn /> Greenville, South Carolina
             </p>
-            <Contactform />
+            </section>
+            <Contactform form={form} sendEmail={sendEmail} />
         </div>
     )
 }

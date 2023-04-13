@@ -4,6 +4,8 @@
     font-family: "Oswald";
     font-weight: 400;
     color: #fff;
+    display: flex;
+    gap: 100px;
     /* margin-bottom: 28%; */
 }
 
@@ -23,15 +25,16 @@ a {
 }
 
 .form-section {
-    display: flex;
+    /* display: flex; */
     gap: 50px;
     border: solid 2px #fff;
-    padding: 100px;
+    padding: 50px;
+    
 }
 
 .form-left {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     justify-content: space-between;
 }
 
@@ -39,10 +42,11 @@ a {
     width: 500px;
 }
 
-.contact-name {
-    width: 350px;
 
+.contact-button {
+    display: flex;
+    margin-left: 42%;
+    margin-top: 15px;
 }
-
 
 
