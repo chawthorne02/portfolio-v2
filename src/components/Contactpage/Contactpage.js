@@ -1,4 +1,5 @@
 import "../../styles/Contactpage.css"
+import { useState } from "react";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
@@ -6,8 +7,14 @@ import Contactform from "./Contactform";
 import Button from 'react-bootstrap/Button';
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
+import Contactmodal from "./Contactmodal";
 
 function Contactpage() {
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     const form = useRef();
 
@@ -17,11 +24,15 @@ function Contactpage() {
       emailjs.sendForm('service_dj2omhg', 'template_5sj81jn', form.current, '-5FuMIkA58NpIsBmE')
         .then((result) => {
             console.log(result.text);
-            console.log("message sent")
+            console.log("message sent");
+            e.target.reset();
+            handleShow();
         }, (error) => {
             console.log(error.text);
         });
     };
+
+
     return (
         <div className="contact-page">
             <section>
@@ -37,6 +48,7 @@ function Contactpage() {
             </p>
             </section>
             <Contactform form={form} sendEmail={sendEmail} />
+            <Contactmodal show={show} handleClose={handleClose} />
         </div>
     )
 }
