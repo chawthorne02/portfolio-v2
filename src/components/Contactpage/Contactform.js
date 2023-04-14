@@ -1,7 +1,7 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-function Contactform({ form, sendEmail }) {
+function Contactform({ form, sendEmail, handleShow }) {
 
 
 
@@ -18,7 +18,7 @@ function Contactform({ form, sendEmail }) {
 
       <Form.Group className="contact-email">
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Email address..." name='user-email'/>
+        <Form.Control type="email" placeholder="Email address..." name='user_email'/>
       </Form.Group>
       </section>
 
@@ -27,7 +27,7 @@ function Contactform({ form, sendEmail }) {
         <Form.Control as="textarea" rows={10} placeholder='Your message...' name='message'/>
       </Form.Group>
 
-      <Button variant="primary" className="contact-button" type='submit'>
+      <Button variant="primary" className="contact-button" type='submit' onClick={() => handleShow()}>
                 Send Message
             </Button>
     </Form>

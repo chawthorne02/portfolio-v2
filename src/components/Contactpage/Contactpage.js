@@ -26,7 +26,6 @@ function Contactpage() {
             console.log(result.text);
             console.log("message sent");
             e.target.reset();
-            handleShow();
         }, (error) => {
             console.log(error.text);
         });
@@ -36,7 +35,7 @@ function Contactpage() {
     return (
         <div className="contact-page">
             <section>
-            <h2 className="contact-title">Get In Touch</h2>
+            {/* <h2 className="contact-title">Get In Touch</h2> */}
             <p className="contact">
                 <BsFillTelephoneFill />  864-293-0404
             </p>
@@ -46,8 +45,9 @@ function Contactpage() {
             <p className="contact">
                 <MdLocationOn /> Greenville, South Carolina
             </p>
+                
             </section>
-            <Contactform form={form} sendEmail={sendEmail} />
+            <Contactform form={form} sendEmail={sendEmail} handleShow={handleShow} />
             <Contactmodal show={show} handleClose={handleClose} />
         </div>
     )
