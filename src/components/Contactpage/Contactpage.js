@@ -8,6 +8,7 @@ import Button from 'react-bootstrap/Button';
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import Contactmodal from "./Contactmodal";
+import Contactsocials from "./Contactsocials";
 
 function Contactpage() {
 
@@ -45,7 +46,7 @@ function Contactpage() {
             <p className="contact">
                 <MdLocationOn /> Greenville, South Carolina
             </p>
-                
+                <Contactsocials />
             </section>
             <Contactform form={form} sendEmail={sendEmail} handleShow={handleShow} />
             <Contactmodal show={show} handleClose={handleClose} />

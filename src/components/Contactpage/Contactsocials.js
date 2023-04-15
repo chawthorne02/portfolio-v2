@@ -18,3 +18,5 @@ function Contactsocials() {
         </ul>
     )
 }
+
+export default Contactsocials;
