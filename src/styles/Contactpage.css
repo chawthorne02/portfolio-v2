@@ -48,4 +48,13 @@ a {
     margin-top: 15px;
 }
 
+.contact-socials {
+   padding-left: 1.5rem;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+
+
 
