@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../../styles/Navbar.css';
 import { Link, animateScroll as scroll } from "react-scroll";
+import resume from "../../images/resume.pdf";
 function TopBar() {
 
 
@@ -25,7 +26,11 @@ function TopBar() {
             <Link className="nav-link" activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={200}>
               Contact
               </Link>
-            <Navbar.Text className="nav-link">Resume</Navbar.Text>
+            <Navbar.Text className="nav-link">
+              <a href={resume} target='_blank'>
+                Resume
+              </a>
+            </Navbar.Text>
           </Nav>
         </Container>
       </Navbar>
