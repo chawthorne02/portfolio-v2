@@ -3,6 +3,7 @@ import Project1 from "../../images/Project1.jpeg"
 import Project2 from "../../images/Project2.jpeg"
 import Project3 from "../../images/Project3.jpeg"
 import Project4 from "../../images/Project4.jpeg"
+import "../../styles/Projectspage.css"
 
 
 function Projectspage() {
@@ -15,6 +16,9 @@ function Projectspage() {
             src={Project1} height={600}
             alt="First slide"
           />
+          <div className='overlay'>
+              <div className='overlay-text'>Text</div>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
           <img
