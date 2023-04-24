@@ -11,13 +11,15 @@ function Projectspage() {
     return (
         <Carousel>
         <Carousel.Item>
-          <img
-            className="project"
-            src={Project1} height={600}
-            alt="First slide"
-          />
-          <div className='overlay'>
-              <div className='overlay-text'>Text</div>
+          <div className='container-overlay'>
+            <img
+              className="project"
+              src={Project1} height={600}
+              alt="First slide"
+            />
+            <div className='overlay'>
+                <div className='overlay-text'>Text</div>
+            </div>
           </div>
         </Carousel.Item>
         <Carousel.Item>
