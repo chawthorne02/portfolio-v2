@@ -23,25 +23,40 @@ function Projectspage() {
           </div>
         </Carousel.Item>
         <Carousel.Item>
+          <div className='container-overlay'>
           <img
             className="project"
             src={Project2} height={600}
             alt="Second slide"
           />
+            <div className='overlay'>
+                <div className='overlay-text'>Text</div>
+            </div>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
+          <div className='container-overlay'>
           <img
             className="project"
             src={Project3} height={600}
             alt="Third slide"
           />
+            <div className='overlay'>
+              <div className='overlay-text'>Text</div>
+            </div>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
+          <div className='container-overlay'>
           <img
             className="project"
             src={Project4} height={600}
             alt="Fourth slide"
           />
+            <div className='overlay'>
+              <div className='overlay-text'>Text</div>
+            </div>
+          </div>
         </Carousel.Item>
       </Carousel>
     )
