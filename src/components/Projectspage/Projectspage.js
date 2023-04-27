@@ -4,7 +4,7 @@ import Project2 from "../../images/Project2.jpeg"
 import Project3 from "../../images/Project3.jpeg"
 import Project4 from "../../images/Project4.jpeg"
 import "../../styles/Projectspage.css"
-
+import { BsGithub } from "react-icons/bs";
 
 function Projectspage() {
 
@@ -18,7 +18,9 @@ function Projectspage() {
               alt="First slide"
             />
             <div className='overlay'>
-                <div className='overlay-text'>Text</div>
+                <div className='overlay-text'>
+                  Link to project <a href='https://github.com/chawthorne02/ccs-final-project'><BsGithub size={40} /></a>
+                  </div>
             </div>
           </div>
         </Carousel.Item>
@@ -30,7 +32,9 @@ function Projectspage() {
             alt="Second slide"
           />
             <div className='overlay'>
-                <div className='overlay-text'>Text</div>
+                <div className='overlay-text'>
+                  Link to project <a href='https://github.com/chawthorne02/django_newspaper_app'><BsGithub size={40} /></a>
+                  </div>
             </div>
           </div>
         </Carousel.Item>
@@ -42,7 +46,9 @@ function Projectspage() {
             alt="Third slide"
           />
             <div className='overlay'>
-              <div className='overlay-text'>Text</div>
+              <div className='overlay-text'>
+                Link to project <a href='https://github.com/chawthorne02/Pixel-Perfect'> <BsGithub size={40} /> </a>
+                </div>
             </div>
           </div>
         </Carousel.Item>
@@ -54,7 +60,9 @@ function Projectspage() {
             alt="Fourth slide"
           />
             <div className='overlay'>
-              <div className='overlay-text'>Text</div>
+              <div className='overlay-text'>
+               Link to project <a href='https://github.com/chawthorne02/Turn-Based-Game'> <BsGithub size={40} /> </a>
+                </div>
             </div>
           </div>
         </Carousel.Item>
