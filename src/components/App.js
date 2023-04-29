@@ -4,13 +4,18 @@ import TitlePage from './Titlepage/Titlepage';
 import AboutPage from './Aboutpage/Aboutpage';
 import Contactpage from './Contactpage/Contactpage';
 import Projectspage from './Projectspage/Projectspage';
+import { motion, useScroll } from "framer-motion";
 function App() {
-
+  const { scrollYProgress } = useScroll();
   
 
 
   return (
-    <div className="container-fluid">
+    <>
+    <motion.div 
+    className="container-fluid" 
+    id='progress-bar'
+    >
       <header>
         <TopBar />
       </header>
@@ -26,7 +31,8 @@ function App() {
       <section className='contact-me' id='contact'>
         <Contactpage /> 
       </section>
-    </div>
+    </motion.div>
+    </>
   );
 }
 
