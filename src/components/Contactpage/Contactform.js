@@ -27,7 +27,7 @@ function Contactform({ form, sendEmail, handleShow }) {
         <Form.Control as="textarea" rows={10} placeholder='Your message...' name='message'/>
       </Form.Group>
 
-      <Button variant="primary" className="contact-button" type='submit' onClick={() => handleShow()}>
+      <Button className="contact-button" type='submit' onClick={() => handleShow()}>
                 Send Message
             </Button>
     </Form>
