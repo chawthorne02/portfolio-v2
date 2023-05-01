@@ -15,7 +15,24 @@
     font-size: larger;
 }
 
+.nav-link:hover {
+    color: #0077b6;
+}
+
+.navbar-nav .nav-link.active {
+    color: #0077b6
+}
+
 .nav-left {
     color: white;
     font-size: x-large;
 }
+
+.navbar-text a {
+    color: #fff;
+}
+
+.navbar-text a:hover {
+    color: #0077b6;
+}
+

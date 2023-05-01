@@ -26,9 +26,9 @@ a {
 .form-section {
     /* display: flex; */
     gap: 50px;
-    border: solid 2px #fff;
+    border: solid 2px #0077b6;
     padding: 50px;
-    
+    border-radius: 0.375rem;
 }
 
 .form-left {
