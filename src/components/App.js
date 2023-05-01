@@ -5,9 +5,10 @@ import AboutPage from './Aboutpage/Aboutpage';
 import Contactpage from './Contactpage/Contactpage';
 import Projectspage from './Projectspage/Projectspage';
 import { motion, useScroll } from "framer-motion";
+import { useRef } from 'react';
 function App() {
   const { scrollYProgress } = useScroll();
-  
+  const scrollRef = useRef(null);
 
 
   return (
@@ -20,7 +21,7 @@ function App() {
         <TopBar />
       </header>
       <section className='title-section' id='title'>
-        <TitlePage />
+        <TitlePage scrollRef={scrollRef}/>
       </section>
       <section className='about-me' id='about-me'>
         <AboutPage />

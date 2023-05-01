@@ -2,7 +2,7 @@ import "../../styles/Titlepage.css"
 import { motion } from "framer-motion";
 
 
-function TitlePage() {
+function TitlePage({ scrollRef }) {
 
 
 
@@ -10,14 +10,17 @@ function TitlePage() {
 
 
     return (
+    <section ref={scrollRef} style={{ overflow: "scroll" }}>
         <motion.div 
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ root: scrollRef }}
         transition={{ duration: 1.5 }}
         >
             <h1 className="title-name">Corey Hawthorne</h1>
             <div className="subtitle">Software Developer</div>
         </motion.div>
+    </section>
     )
 }
 
