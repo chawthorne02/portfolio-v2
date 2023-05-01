@@ -1,7 +1,7 @@
 import Me from "../../images/Me.jpg";
 import "../../styles/Aboutpage.css";
 import { motion } from "framer-motion";
-function AboutPage() {
+function AboutPage({ scrollRef }) {
  
 
 
@@ -9,11 +9,13 @@ function AboutPage() {
 
 
     return (
+    <section ref={scrollRef} style={{ overflow: "scroll" }}>
         <motion.div 
         className="about-page"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
+        viewport={{ root: scrollRef }}
         >
             <img src={Me} alt="me" className="me-pic"></img>
             <p className="about-text">
@@ -22,6 +24,7 @@ function AboutPage() {
                 I understand the importance of creating highly readable and easily maintainable source code with experience in Agile methodology.
             </p>
         </motion.div>
+    </section>
     )
 }
 

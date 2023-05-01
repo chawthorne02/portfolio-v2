@@ -24,13 +24,13 @@ function App() {
         <TitlePage scrollRef={scrollRef}/>
       </section>
       <section className='about-me' id='about-me'>
-        <AboutPage />
+        <AboutPage scrollRef={scrollRef}/>
       </section>
       <section className='projects' id='projects'>
-        <Projectspage />
+        <Projectspage scrollRef={scrollRef}/>
       </section>
       <section className='contact-me' id='contact'>
-        <Contactpage /> 
+        <Contactpage scrollRef={scrollRef}/> 
       </section>
     </motion.div>
     </>
