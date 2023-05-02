@@ -14,7 +14,6 @@ function TitlePage({ scrollRef }) {
         <motion.div 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ root: scrollRef }}
         transition={{ duration: 1.5 }}
         >
             <h1 className="title-name">Corey Hawthorne</h1>

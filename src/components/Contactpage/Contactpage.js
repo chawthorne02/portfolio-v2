@@ -9,8 +9,10 @@ import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import Contactmodal from "./Contactmodal";
 import Contactsocials from "./Contactsocials";
+import { motion } from "framer-motion";
 
-function Contactpage() {
+
+function Contactpage({ scrollRef }) {
 
     const [show, setShow] = useState(false);
 
@@ -34,9 +36,12 @@ function Contactpage() {
 
 
     return (
-        <div className="contact-page">
-            <section>
-            {/* <h2 className="contact-title">Get In Touch</h2> */}
+        <section className="contact-page" ref={scrollRef} style={{ overflow: "scroll" }}>
+            <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            >
             <p className="contact">
                 <BsFillTelephoneFill />  864-293-0404
             </p>
@@ -47,10 +52,10 @@ function Contactpage() {
                 <MdLocationOn /> Greenville, South Carolina
             </p>
                 <Contactsocials />
-            </section>
+            </motion.div>
             <Contactform form={form} sendEmail={sendEmail} handleShow={handleShow} />
             <Contactmodal show={show} handleClose={handleClose} />
-        </div>
+        </section>
     )
 }
 

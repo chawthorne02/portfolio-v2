@@ -6,7 +6,7 @@ import Project4 from "../../images/Project4.jpeg"
 import "../../styles/Projectspage.css"
 import { BsGithub } from "react-icons/bs";
 
-function Projectspage() {
+function Projectspage({ scrollRef }) {
 
     return (
         <Carousel>

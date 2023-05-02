@@ -15,7 +15,6 @@ function AboutPage({ scrollRef }) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        viewport={{ root: scrollRef }}
         >
             <img src={Me} alt="me" className="me-pic"></img>
             <p className="about-text">
