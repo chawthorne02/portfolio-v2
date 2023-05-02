@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import '../../styles/Navbar.css';
 import { Link, animateScroll as scroll } from "react-scroll";
 import resume from "../../images/resume.pdf";
+import Burger from '../Burger/Burger';
 function TopBar() {
 
 
@@ -31,6 +32,7 @@ function TopBar() {
                 Resume
               </a>
             </Navbar.Text>
+            <Burger /> 
           </Nav>
         </Container>
       </Navbar>
