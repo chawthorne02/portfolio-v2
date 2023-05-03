@@ -13,7 +13,7 @@ function Menuoffcanvas({ show, handleClose }) {
         <>
         <Offcanvas show={show} onHide={() => handleClose()} placement='top' variant="primary">
             <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+            <Offcanvas.Title>Portfolio</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
             <ul>
