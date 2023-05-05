@@ -16,18 +16,18 @@ function Menuoffcanvas({ show, handleClose }) {
             <Offcanvas.Title>Portfolio</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-            <ul>
+            <ul className='burger-links'>
                 <li>
-                    <a href="#">About me</a>
+                    <a href="#" className='burger-link'>About me</a>
                 </li>
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="#"className='burger-link'>Projects</a>
                 </li>
                 <li>
-                    <a href='#'>Contact</a>
+                    <a href='#' className='burger-link'>Contact</a>
                 </li>
                 <li>
-                    <a href='#'>Resume</a>
+                    <a href='#' className='burger-link'>Resume</a>
                 </li>
             </ul>
             </Offcanvas.Body>

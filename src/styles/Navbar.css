@@ -39,4 +39,15 @@
 .offcanvas {
     background-color: #0077b6;
     font-family: "Oswald";
+    font-size: 2rem;
+}
+
+.burger-link {
+    display: flex;
+    justify-content: center;  
+    padding: 20px;
+}
+
+.burger-links {
+    list-style: none;
 }
