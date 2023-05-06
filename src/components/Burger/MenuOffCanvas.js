@@ -11,9 +11,9 @@ function Menuoffcanvas({ show, handleClose }) {
 
     return (
         <>
-        <Offcanvas show={show} onHide={() => handleClose()} placement='top' variant="primary">
+        <Offcanvas show={show} onHide={handleClose} placement='top' variant="primary">
             <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Portfolio</Offcanvas.Title>
+            {/* <Offcanvas.Title>Portfolio</Offcanvas.Title> */}
             </Offcanvas.Header>
             <Offcanvas.Body>
             <ul className='burger-links'>
