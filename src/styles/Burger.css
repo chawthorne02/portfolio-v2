@@ -1,5 +1,5 @@
 .burger {
-
+    display: none;
 }
 
 .bar {
@@ -10,4 +10,10 @@
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .burger {
+        display: block;
+    }
 }
