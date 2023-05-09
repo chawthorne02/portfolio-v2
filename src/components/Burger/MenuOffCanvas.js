@@ -1,5 +1,6 @@
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
+import { Link, animateScroll as scroll } from "react-scroll";
+import resume from "../../images/resume.pdf";
 
 function Menuoffcanvas({ show, handleClose }) {
 
@@ -13,21 +14,54 @@ function Menuoffcanvas({ show, handleClose }) {
         <>
         <Offcanvas show={show} onHide={handleClose} placement='top' variant="primary">
             <Offcanvas.Header closeButton>
-            {/* <Offcanvas.Title>Portfolio</Offcanvas.Title> */}
+             <Offcanvas.Title>
+                <Link activeClass="active" to="title" spy={true} smooth={true} offset={0} duration={200}>
+                Corey Hawthorne
+                </Link>
+                </Offcanvas.Title> 
             </Offcanvas.Header>
             <Offcanvas.Body>
             <ul className='burger-links'>
                 <li>
-                    <a href="#" className='burger-link'>About me</a>
+                    <Link
+                    className='burger-link'
+                    activeClass="active" 
+                    to="about-me" 
+                    spy={true} 
+                    smooth={true} 
+                    offset={0} 
+                    duration={200}
+                    >
+                    About Me
+                   </Link>
                 </li>
                 <li>
-                    <a href="#"className='burger-link'>Projects</a>
+                    <Link 
+                    className="burger-link" 
+                    activeClass="active" 
+                    to="projects" 
+                    spy={true} 
+                    smooth={true} 
+                    offset={0} 
+                    duration={200}>
+                    Projects
+                    </Link>
                 </li>
                 <li>
-                    <a href='#' className='burger-link'>Contact</a>
+                    <Link 
+                    className="burger-link" 
+                    activeClass="active" 
+                    to="contact" 
+                    spy={true} 
+                    smooth={true} 
+                    offset={0} 
+                    duration={200}
+                    >
+                    Contact
+                    </Link>
                 </li>
                 <li>
-                    <a href='#' className='burger-link'>Resume</a>
+                    <a href={resume} className='burger-link' target='_blank'>Resume</a>
                 </li>
             </ul>
             </Offcanvas.Body>
