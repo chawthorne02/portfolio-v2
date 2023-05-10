@@ -16,7 +16,7 @@ function Contactform({ form, sendEmail, handleShow }) {
         <Form.Control type="name" placeholder="Your Name..." name='user_name'/>
       </Form.Group>
 
-      <Form.Group className="contact-email">
+      <Form.Group className="email">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Email address..." name='user_email'/>
       </Form.Group>

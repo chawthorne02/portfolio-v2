@@ -60,6 +60,55 @@ a {
     background-color: #03045e;
 }
 
+@media screen and (max-width: 768px) {
+    .contact-page {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .contact {
+        font-size: 15px;
+        gap: 0px;
+        margin: 0 0 0 0;
+        height: 25px;
+        display: flow-root;
+    }
+
+    .contact-socials {
+        justify-content: end;
+        gap: 0;
+        margin: 0 0 0 0;
+    }
+
+    svg {
+        height: 50px;
+    }
+
+    .contact-message {
+        width: 380px;
+    }
+
+    .form-section {
+        padding: 30px;
+    }
+
+    .contact-button {
+        margin-left: 37%;
+    }
+
+    .contact-email {
+        margin: 0 0 0 0;
+        height: 25px;
+    }
+
+    .contact-location {
+        margin: 0 0 0 0;
+        height: 25px;
+    }
+
+    
+}
+
 
 
 

@@ -42,15 +42,14 @@ function Contactpage({ scrollRef }) {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
             >
-            <p className="contact">
-                <BsFillTelephoneFill />  864-293-0404
-            </p>
-            <p className="contact">
+            <span className="contact">
+            <p className="contact-email">
                 <a href="mailto: chawthorne02@gmail.com"><BsEnvelopeFill /> chawthorne02@gmail.com </a>
             </p>
-            <p className="contact">
+            <p className="contact-location">
                 <MdLocationOn /> Greenville, South Carolina
             </p>
+            </span>
                 <Contactsocials />
             </motion.div>
             <Contactform form={form} sendEmail={sendEmail} handleShow={handleShow} />
