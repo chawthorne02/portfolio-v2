@@ -26,6 +26,8 @@
     .about-page {
         display: flex;
         flex-direction: column;
+        margin-left: 7%;
+        margin-right: 7%;
     }
 
     .me-pic {
