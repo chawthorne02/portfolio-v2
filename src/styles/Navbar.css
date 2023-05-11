@@ -7,6 +7,7 @@
 .navbar {
     font-family: "Oswald";
     color: white;
+    background-color: #0077b6;
 }
 
 .nav-link {
@@ -16,11 +17,13 @@
 }
 
 .nav-link:hover {
-    color: #0077b6;
+    text-decoration: underline;
+    color: #fff;
 }
 
 .navbar-nav .nav-link.active {
-    color: #0077b6
+    text-decoration: underline;
+    color: #fff;
 }
 
 .nav-left {
@@ -33,7 +36,7 @@
 }
 
 .navbar-text a:hover {
-    color: #0077b6;
+    color: #fff;
 }
 
 .offcanvas {
