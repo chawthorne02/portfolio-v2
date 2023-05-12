@@ -19,6 +19,7 @@
 .nav-link:hover {
     text-decoration: underline;
     color: #fff;
+    cursor: pointer;
 }
 
 .navbar-nav .nav-link.active {
@@ -43,6 +44,10 @@
     background-color: #0077b6;
     font-family: "Oswald";
     font-size: 2rem;
+}
+
+.offcanvas.offcanvas-top {
+    height: 64%;
 }
 
 .burger-link {
