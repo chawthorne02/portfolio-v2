@@ -32,6 +32,10 @@
     font-size: x-large;
 }
 
+.nav-left:hover {
+    cursor: pointer;
+}
+
 .navbar-text a {
     color: #fff;
 }
