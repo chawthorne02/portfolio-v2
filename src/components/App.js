@@ -4,6 +4,7 @@ import TitlePage from './Titlepage/Titlepage';
 import AboutPage from './Aboutpage/Aboutpage';
 import Contactpage from './Contactpage/Contactpage';
 import Projectspage from './Projectspage/Projectspage';
+import Footer from './Footer/Footer';
 import { motion, useScroll } from "framer-motion";
 import { useRef } from 'react';
 function App() {
@@ -32,6 +33,9 @@ function App() {
       <section className='contact-me' id='contact'>
         <Contactpage scrollRef={scrollRef}/> 
       </section>
+      <footer>
+        <Footer />
+      </footer>
     </motion.div>
     </>
   );
