@@ -11,11 +11,9 @@ function Footer() {
     return (
         <Navbar fixed='bottom'>
       <Container>
-        <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            Signed in as: <a href="#login">Mark Otto</a>
+        <Navbar.Collapse className="justify-content-center">
+          <Navbar.Text className='footer-text'>
+            Created by Corey Hawthorne
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>
