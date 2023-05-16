@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+
+.footer-text {
+    color: #fff;
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: larger;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+}

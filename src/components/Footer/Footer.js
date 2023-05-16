@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-
+import "../../styles/Footer.css"
+import { AiOutlineCopyrightCircle } from "react-icons/ai"
 
 function Footer() {
 
@@ -9,11 +10,11 @@ function Footer() {
 
 
     return (
-        <Navbar fixed='bottom'>
+        <Navbar fixed='bottom' className='footer'>
       <Container>
         <Navbar.Collapse className="justify-content-center">
           <Navbar.Text className='footer-text'>
-            Created by Corey Hawthorne
+            <AiOutlineCopyrightCircle /> Created by Corey Hawthorne
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>
