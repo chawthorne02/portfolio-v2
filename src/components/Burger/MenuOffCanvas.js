@@ -1,12 +1,15 @@
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link, animateScroll as scroll } from "react-scroll";
 import resume from "../../images/resume.pdf";
+import useOnClickOutside from "../Hooks/Hooks";
+import { useRef } from 'react';
+import { useState } from 'react';
 
-function Menuoffcanvas({ show, handleClose }) {
+function Menuoffcanvas({ show, handleClose, handleShow }) {
 
-
-
-
+    const [open, setOpen] = useState(false)
+    const node = useRef();
+    useOnClickOutside(node, () => setOpen(false));
 
 
 

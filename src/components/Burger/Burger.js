@@ -9,7 +9,7 @@ function Burger() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-  
+
     return (
         <>
             <section className="burger" onClick={() => handleShow()}>
@@ -17,7 +17,7 @@ function Burger() {
                 <a href="#" className="bar"></a>
                 <a href="#" className="bar"></a>
                 <a href="#" className="bar"></a>
-                <Menuoffcanvas show={show} handleClose={handleClose}/>
+                <Menuoffcanvas show={show} handleClose={handleClose} handleShow={handleShow}/>
             </section>
         </>
     )
