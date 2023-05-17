@@ -11,7 +11,7 @@ function Contactmodal({ show, handleClose }) {
         </Modal.Header>
         <Modal.Body>I'll get back to you as soon as possible!</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button className="modal-button" onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>

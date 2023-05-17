@@ -57,7 +57,15 @@ a {
 }
 
 .modal-header {
-    background-color: #03045e;
+    background-color: #0077b6;
+}
+
+.modal-title {
+    color: #fff;
+}
+
+.modal-button {
+    background-color: #0077b6;
 }
 
 @media screen and (max-width: 768px) {
