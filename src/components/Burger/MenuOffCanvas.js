@@ -5,7 +5,7 @@ import useOnClickOutside from "../Hooks/Hooks";
 import { useRef } from 'react';
 import { useState } from 'react';
 
-function Menuoffcanvas({ show, handleClose, handleShow }) {
+function Menuoffcanvas({ show, handleClose }) {
 
     const [open, setOpen] = useState(false)
     const node = useRef();

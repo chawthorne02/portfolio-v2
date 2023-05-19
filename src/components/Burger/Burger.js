@@ -12,12 +12,12 @@ function Burger() {
 
     return (
         <>
-            <section className="burger" onClick={() => handleShow()}>
+            <section className="burger" onClick={handleShow}>
                 <a href="#" className="bar"></a>
                 <a href="#" className="bar"></a>
                 <a href="#" className="bar"></a>
                 <a href="#" className="bar"></a>
-                <Menuoffcanvas show={show} handleClose={handleClose} handleShow={handleShow}/>
+                <Menuoffcanvas show={show} handleClose={handleClose} />
             </section>
         </>
     )
