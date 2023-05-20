@@ -38,6 +38,7 @@ function Contactpage({ scrollRef }) {
     return (
         <section className="contact-page" ref={scrollRef} style={{ overflow: "scroll" }}>
             <motion.div
+            className="cp"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
