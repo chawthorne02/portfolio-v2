@@ -15,3 +15,9 @@
     font-size: 2rem;
     text-align: center;
 }
+
+@media screen and (max-width: 414px) {
+    .title-name {
+        font-size: 3rem;
+    }
+}
