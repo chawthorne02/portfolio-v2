@@ -4,6 +4,7 @@ import resume from "../../images/resume.pdf";
 import useOnClickOutside from "../Hooks/Hooks";
 import { useRef } from 'react';
 import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 
 function Menuoffcanvas({ show, handleClose }) {
 
@@ -15,8 +16,8 @@ function Menuoffcanvas({ show, handleClose }) {
 
     return (
         <>
-        <Offcanvas show={show} onHide={handleClose} placement='top' variant="primary">
-            <Offcanvas.Header closeButton>
+        <Offcanvas show={show} onHide={handleClose} placement='top' >
+            <Offcanvas.Header closeButton closeVariant='white'>
              <Offcanvas.Title>
                 <Link activeClass="active" to="title" spy={true} smooth={true} offset={0} duration={200}>
                 Corey Hawthorne
