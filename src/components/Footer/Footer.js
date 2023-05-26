@@ -14,7 +14,7 @@ function Footer() {
       <Container>
         <Navbar.Collapse className="justify-content-center">
           <Navbar.Text className='footer-text'>
-            <AiOutlineCopyrightCircle /> Created by Corey Hawthorne
+            <AiOutlineCopyrightCircle /> Created by Corey Hawthorne 2023
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>
